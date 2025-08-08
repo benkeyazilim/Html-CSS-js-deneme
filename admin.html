@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #1c2a38, #2a7da3);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .admin-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+            width: 500px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .logout-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .logout-btn:hover {
+            background: linear-gradient(45deg, #c0392b, #e74c3c);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h2>🛠️ Admin Paneline Hoş Geldiniz, {{ username }}!</h2>
+        <p>Bu panel, sistemin tüm ayarlarını ve verilerini yönetebileceğiniz özel bir alandır. Lütfen dikkatli kullanınız.</p>
+        <a href="/logout" class="logout-btn">Çıkış Yap</a>
+</body>
+</html>
