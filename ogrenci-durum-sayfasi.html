@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Öğrenci Dürüm Sipariş</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
+        .product-page-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .product-page-container h1 {
+            color: #0033cc;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .product-page-container img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .product-details {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .product-details h2 {
+            font-size: 1.5em;
+            color: #555;
+            margin: 10px 0;
+        }
+        .product-actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product-actions button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .product-actions button:hover {
+            transform: translateY(-3px);
+        }
+        .order-button {
+            background-color: #28a745;
+        }
+        .order-button:hover {
+            background-color: #218838;
+        }
+        .add-to-cart-button {
+            background-color: #ffc107;
+            color: #333;
+        }
+        .add-to-cart-button:hover {
+            background-color: #e0a800;
+        }
+        .comment-button {
+            background-color: #17a2b8;
+        }
+        .comment-button:hover {
+            background-color: #138496;
+        }
+    </style>
+</head>
+<body>
+
+<div class="product-page-container">
+    <a href="menü-deneme.html" style="float: left; text-decoration: none; color: #0033cc; font-size: 1.2em;">&larr; Menüye Geri Dön</a>
+    <h1>ÖĞRENCİ DÜRÜM</h1>
+    <img src="https://i.supaimg.com/156aad00-4cb6-4575-a7fb-85b12eb6e188.jpg" alt="Öğrenci Dürüm Resmi">
+    
+    <div class="product-details">
+        <h2>**130 Gr çiğköfte**</h2>
+        <h2>**Acı sos, nar ekşisi**</h2>
+        <h2>**Marul, domates, salatalık**</h2>
+    </div>
+
+    <div class="product-actions">
+        <button class="order-button" onclick="alert('Siparişiniz alınmıştır, afiyet olsun!')">Sipariş Ver</button>
+        <button class="add-to-cart-button" onclick="alert('Ürün sepetinize eklenmiştir.')">Sepete Ekle</button>
+        <button class="comment-button" onclick="window.location.href='yorum-yap.html'">Yorum Yap</button>
+    </div>
+</div>
+
+</body>
+</html>
